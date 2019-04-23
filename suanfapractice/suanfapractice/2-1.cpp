@@ -1,10 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-typedef long long LL;
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <math.h>
+//#include <string.h>
+//typedef long long LL;
 //const double pi = acos(-1.0); //acos反余弦函数：一直函数值求弧度值
 
-int main(){
+//int main(){
 	//赋值表达式
 	//1
 	/*int n=3*2+1;
@@ -311,7 +312,127 @@ int main(){
 	return 0;*/
 	
 	//memset：给数组中每一个元素赋同样的值，需在开头添加string.h头文件
-}
+	/*int a[5] = {1,2,3,4,5};
+	//赋初值0
+	memset(a,0,sizeof(a));
+	for(int i =0;i<5;i++){
+		printf("%d ",a[i]);
+	}
+	printf("\n");
+	//赋初值-1
+	//memset(a,-1,sizeof(a));
+	memset(a,1,sizeof(a));
+	for(int i = 0;i<5;i++){
+		printf("%d",a[i]);
+	}
+	printf("\n");
+	system("pause");
+	return 0;*/
+	//字符数组
+	/*//char str[15]={'G','o','o','d',' ','s','t','o','r','y','!'};
+	char str[15] = "Good Story!";
+	for(int i = 0;i<11;i++){
+		printf("%c",str[i]);
+	}
+	system("pause");
+	return 0;*/
+	//字符数组的输入和输出
+	//%c格式能够识别空格跟换行并将其输入
+	//%s通过空格或换行来识别一个字符串的结束
+	/*char str[10];
+	scanf("%s",str);
+	printf("%s",str);
+	system("pause");
+	return 0;*/
+	//getchar输入putchar输出
+	/*char str[5][5];
+	for(int i = 0;i<3;i++){
+		for(int j = 0;j<3;j++){
+			str[i][j] = getchar();
+		}
+		getchar();//这句是为了把输入中每行末尾的换行符吸收掉
+	}
+	for(int i = 0;i<3;i++){
+		for(int j = 0;j<3;j++){
+			putchar(str[i][j]);
+		}
+		putchar('\n');
+	}
+	system("pause");
+	return 0;*/
+	//gets输入puts输出
+	/*char str1[20];
+	char str2[2][5];
+	gets(str1);
+	for(int  i = 0;i<3;i++){
+		gets(str2[i]);
+	}
+	puts(str1);
+	for(int i = 0;i<3;i++){
+		puts(str2[i]);
+	}
+	system("pause");
+	return 0;*/
+	//如果不是scanf函数的%s格式或gets函数输入字符串
+	/*char str[15];
+	for(int i =0;i<3;i++){
+		str[i] = getchar();
+	}
+	str[3]='\0';
+	puts(str);
+	system("pause");
+	return 0;*/
+	//string.h头文件
+	//strlen()字符串长度
+	/*char str[10];
+	gets(str);
+	int len = strlen(str);
+	printf("%d\n",len);
+	system("pause");
+	return 0;*/
+	//strcmp()：字典排序
+	/*char str1[50],str2[50];
+	gets(str1);
+	gets(str2);
+	int cmp = strcmp(str1,str2);
+	if(cmp<0) printf("str1>str2\n");
+	else if(cmp>0) printf("str1>str2\n");
+	else printf("str1==str2\n");
+	system("pause");
+	return 0;*/
+	//strcpy(字符数组1，字符数组2):把字符串2复制给字符串1
+	/*char str1[50],str2[50];
+	gets(str1);
+	gets(str2);
+	strcpy(str1,str2);
+	puts(str1);
+	system("pause");
+	return 0;*/
+	//strcat(字符串1，字符串2)可以把字符串2接到字符串1后面
+	/*char str1[50],str2[50];
+	gets(str1);
+	gets(str2);
+	strcat(str1,str2);
+	puts(str1);
+	system("pause");
+	return 0;*/
+
+	//sscanf:把字符数组str中的内容以"%d"的格式写到n中（从左至右）
+	/*int n;
+	char str[100] = "123";
+	sscanf(str,"%d",&n);
+	printf("%d\n",n);
+	system("pause");
+	return 0;*/
+	//sprintf：把n以"%d"的格式写到str字符数组中（从右至左）
+	/*int n =233;
+	char str[100];
+	sprintf(str,"%d",n);
+	printf("%s\n",str);
+	system("pause");
+	return 0;*/
+	
+//}
 
 
 
